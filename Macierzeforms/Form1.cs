@@ -124,7 +124,7 @@ namespace Macierzeforms
                 {
                     TextBox textBox = tableLayoutPanel1.GetControlFromPosition(j, i) as TextBox;
                     bool isdouble = double.TryParse(textBox.Text, out double result);
-                    if (result > 0)
+                    if (isdouble)
                     {
                         matrix1[i, j] = double.Parse(textBox.Text); 
                     }
